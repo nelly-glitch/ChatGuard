@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML File</title>
+     <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <header>
+   <h1 id="title">Survey Form</h1>
+<p id="description">Thank you for taking your time to help us develop the paltform.</p>
+</header>
+    <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name <input type="text" id="name" name="name" placeholder="Enter Your Name"required></label>
+      <label id="email-label" for="email">Email <input type="email" id="email" name="email" placeholder="Enter Your Email"required></label>
+        <label id="number-label" for="age">Age(optional) <input type="number" id="number" name="number" min="18" max="55" required placeholder="Enter Your Age"></label>
+         </fieldset>
+         <fieldset>
+      <label>Which option describes your current position?
+        <select id="dropdown">
+        <option value="">Select Current Position</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job </option>
+        <option value="4">Perfer Not to Say</option>
+        <option value="5">Part Time Job</option>
+        <option value="5">Other</option>
+        <select>
+      </label>
+
+      <label>Would you recommend our services to a friend? </label>
+   <label for="definitely"><input value="Definitely"  name="radio-group"  type="radio" class="inline" checked/> Definitely</lable>
+     <label for="Maybe"> <input value="Maybe" type="radio" name="radio-group" class="inline"/>Maybe</lable>
+    <label for="Not-certain"><input  value="Not-certain" type="radio" name="radio-group" class="inline"/> Not sure</lable>
+     
+      <label>What is your favorite feature on our site?
+      <select id="dropdown">
+        <option value="">Select an Option</option>
+        <option value="1">Challenges</option>
+        <option value="2">Projects</option>
+        <option value="3">Community</option>
+        <option value="4">Open source</option>
+        <select>
+      </label>
+ <label>What would you like us to improve? (Check all that apply)</label>
+        <label><input value="front-end-projects"  name="front-end-projects"  type="checkbox" class="inline"/>Front-end Projects</label>
+        <label><input value="back-end-projects" type="checkbox" name="back-end-projects" class="inline"/> Back-end Projects</label>
+        <label><input  value="data-visualization" type="checkbox" name="data-visualization" class="inline"/> Data Visualization</label>
+        <label><input value="challenges"  name="challenges"  type="checkbox" class="inline"/> Challenges</label>
+        <label><input value="open-source-community" type="checkbox" name="open-source-community" class="inline"/> Open Source Community</label>
+        <label><input  value="gitter-gelp-rooms" type="checkbox" name="gitter-help-rooms" class="inline"/> Gitter help rooms</label>
+        <label><input value="videos"  name="videos"  type="checkbox" class="inline"/> Videos</label>
+        <label><input value="city-meetups" type="checkbox" name="citymeetups" class="inline"/> City Meetups</label>
+        <label><input  value="wikipedia" type="checkbox" name="wikipedia" class="inline"/> Wikipedia</label>
+      <label><input value="forum" type="checkbox" name="forum" class="inline"/> Forum</label>
+            <label><input  value="additional-courses" type="checkbox" name="additional-courses" class="inline"/> Additional Courses</label>
+     <fieldset>
+       <label>Any comments or suggestions?
+         <textarea placeholder="Enter Your Comments Here!..."></textarea>
+       </label>
+       <button id="submit">Sumbit</button>
+    </fieldset>
+    </fieldset>
+  </body>
+</html>
+
